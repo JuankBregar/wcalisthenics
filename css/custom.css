@@ -1,0 +1,285 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+a,
+button {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+    font-weight: bold !important;
+}
+
+
+/*NAVBAR*/
+
+.navbar img {
+    height: 10%;
+}
+
+.scrolled {
+    background: black;
+    transition: .3s all ease-in;
+}
+
+
+/*Sections*/
+
+.section {
+    position: relative;
+    min-height: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.main {
+    background: url('../img/ca.png') center;
+    background-size: cover;
+}
+
+.main:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.services {
+    background: black;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* MAIN SECTION */
+
+.holder {
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+    max-width: 75%;
+    box-sizing: border-box;
+}
+
+#homeheader {
+    position: absolute;
+    top: 40%;
+    color: white;
+    padding-left: 15px;
+}
+
+.homesvg {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    top: 28%;
+    left: 5%;
+}
+
+.homesvg img {
+    height: 100%;
+}
+
+#homeheader h1 span {
+    color: #ffa10c;
+}
+
+
+/* SCROLL BAR*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #63584b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffa10c;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+
+/**What we do*/
+
+.services .section-title {
+    text-align: center;
+    color: azure;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.services .card {
+    padding: 1rem!important;
+    border: none;
+    margin-bottom: 1rem;
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    transition: .2s all ease;
+    background-color: #dedede40;
+    color: azure;
+    min-height: 180px;
+}
+
+.services .card:hover {
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    transform: scale(1.1);
+}
+
+.services .card .card-block {
+    padding-left: 50px;
+    position: relative;
+}
+
+.services .card .card-block a {
+    color: #ffa10c !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.services .card .card-block a i {
+    display: none;
+}
+
+.services .card:hover .card-block a i {
+    display: inline-block;
+    font-weight: 700;
+}
+
+
+/*footer*/
+
+.dark-footer {
+    background: black;
+}
+
+.dark-footer p {
+    line-height: 1.7rem;
+}
+
+.dark-footer a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dark-footer a {
+    color: #757371;
+}
+
+.flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+footer strong {
+    color: #f6a13c70;
+}
+
+
+/*BREAK POINTS-*/
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    #homeheader h1 {
+        font-size: 2rem;
+    }
+    #homeheader h2 {
+        font-size: 1.3rem;
+    }
+    #homeheader {
+        left: 50%;
+        border-left: 7px solid;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    #homeheader h1 {
+        font-size: 2rem;
+    }
+    #homeheader h2 {
+        font-size: 1.3rem;
+    }
+    #homeheader {
+        left: 48%;
+        border-left: 7px solid;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    #homeheader h1 {
+        font-size: 2rem;
+    }
+    #homeheader h2 {
+        font-size: 1.3rem;
+    }
+    #homeheader {
+        left: 45%;
+        border-left: 7px solid;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    #homeheader h1 {
+        font-size: 3rem;
+    }
+    #homeheader h2 {
+        font-size: 1.7rem;
+    }
+    #homeheader {
+        left: 40%;
+        border-left: 10px solid;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    #homeheader h1 {
+        font-size: 4.3rem;
+    }
+    #homeheader h2 {
+        font-size: 2rem;
+    }
+    #homeheader {
+        left: 40%;
+        border-left: 10px solid;
+    }
+}

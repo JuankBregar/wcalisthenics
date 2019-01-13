@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg8" width="793.7" height="1122.5" version="1.1" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata id="metadata5">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <style>
+    .lines {
+        fill: none;
+        stroke-linejoin: bevel;
+        stroke-width: .801;
+        stroke: #000;
+        stroke-dasharray: 465;
+        stroke-dashoffset: 0;
+        /*key frame name, duration, final state, delay*/
+        -webkit-animation: borders 2s forwards;
+        -moz-animation: borders 2s forwards;
+        -o-animation: borders 2s forwards;
+        animation: borders 2s forwards;
+    }
+
+    @-webkit-keyframes borders {
+        from{
+            stroke-dashoffset: 465;
+        }
+        to{
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes borders {
+        from{
+            stroke-dashoffset: 465;
+        }
+        to{
+            stroke-dashoffset: 0;
+        }
+    }
+ </style>
+ <g id="layer2">
+  <path id="path1044" class="lines" transform="matrix(1.0971 0 0 1.1033 -9.9461 -8.4621)" d="m170.85 98.185 0.12646 76.888-66.524 38.554-66.65-38.335-0.12647-76.888 66.524-38.554z"/>
+  <path id="path1075" class="lines" d="m31.382 100.11 146.24 84.592" />
+  <path id="path1077" class="lines" d="m31.52 184.94 145.96-85.075" />
+  <path id="path1079" class="lines" d="m31.52 184.94 146.1-0.24168-73.258-127.13-72.842 127.37" />
+  <path id="path1082" class="lines" d="m104.36 57.573 0.27749 169.67" />
+ </g>
+</svg>
