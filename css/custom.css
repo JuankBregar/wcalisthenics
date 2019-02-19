@@ -81,8 +81,9 @@ button {
     position: absolute;
     width: 40%;
     height: 60%;
-    top: 28%;
-    left: 5%;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
 }
 
 .homesvg img {
