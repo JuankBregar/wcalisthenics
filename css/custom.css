@@ -79,15 +79,20 @@ button {
 
 .homesvg {
     position: absolute;
-    width: 40%;
-    height: 60%;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
 }
 
 .homesvg img {
-    height: 100%;
+    /* width: 80%; */
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #homeheader h1 span {
@@ -121,7 +126,7 @@ button {
 }
 
 .services .card {
-    padding: 1rem!important;
+    /* padding: 1rem!important; */
     border: none;
     margin-bottom: 1rem;
     -webkit-transition: .2s all ease;
@@ -129,18 +134,23 @@ button {
     transition: .2s all ease;
     background-color: #dedede40;
     color: azure;
-    min-height: 180px;
+    min-height: 340px;
 }
 
 .services .card:hover {
     -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
     -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
     box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    /* transform: scale(1.1); */
+}
+
+.services .card:hover .card-image img {
     transform: scale(1.1);
 }
 
 .services .card .card-block {
-    padding-left: 50px;
+    /* padding-left: 50px; */
+    margin: 20px;
     position: relative;
 }
 
@@ -157,6 +167,69 @@ button {
 .services .card:hover .card-block a i {
     display: inline-block;
     font-weight: 700;
+}
+
+.services .card .card-image img {
+    display: block;
+    width: 100%;
+}
+
+.services .card .card-image {
+    overflow: hidden;
+}
+
+.services .rot {
+    position: absolute;
+    left: 88%;
+    top: -50%;
+    background: black;
+    padding: 15px;
+    border-radius: 27px;
+    cursor: pointer;
+}
+
+.services .rot:hover {
+    background: grey;
+}
+
+.services .clrot {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+    cursor: pointer;
+}
+
+.rotate {
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY( 180deg);
+    transform: rotateY( 180deg);
+}
+
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front {
+    z-index: 1;
+}
+
+.back {
+    -webkit-transform: rotateY( 180deg);
+    transform: rotateY( 180deg);
+}
+
+.front,
+.back {
+    box-shadow: 0 1px 6px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
 }
 
 
