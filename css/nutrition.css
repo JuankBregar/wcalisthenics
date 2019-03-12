@@ -37,8 +37,10 @@ button {
 }
 
 .main {
-    background: url('../img/ca.png') center;
+    background: url('../img/food.jpg') center;
     background-size: cover;
+    max-height: 60% !important;
+    min-height: 60% !important;
 }
 
 .main:before {
@@ -65,8 +67,8 @@ button {
 .holder {
     margin: 0 auto;
     position: relative;
-    min-height: 100%;
-    max-width: 75%;
+    min-height: 60%;
+    max-width: 50%;
     box-sizing: border-box;
 }
 
@@ -83,7 +85,7 @@ button {
     width: 100%;
     /* top: 50%; */
     /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
+    transform: translate(0%, 5%);
 }
 
 .homesvg img {
@@ -117,6 +119,10 @@ button {
 
 
 /**What we do*/
+
+.services h3 {
+    font-size: 1.5rem;
+}
 
 .services .section-title {
     text-align: center;
@@ -358,3 +364,6 @@ footer strong {
         border-left: 10px solid;
     }
 }
+
+
+/* TODO: Fix nav bar responsive view with media query */
