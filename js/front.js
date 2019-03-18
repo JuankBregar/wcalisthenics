@@ -17,3 +17,12 @@ $('.rot').on('click', function() {
 $('.clrot').on('click', function() {
     $(this).parent().parent().parent().removeClass('rotate');
 });
+
+$(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 10000,
+    });
+});
