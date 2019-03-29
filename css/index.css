@@ -3,6 +3,44 @@
     background-size: cover;
 }
 
+h1#cs {
+    position: absolute;
+    bottom: 2%;
+    left: 34%;
+    color: #ffffff;
+    overflow: hidden;
+    border-right: 0.05em solid #ececec;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 38%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
 
 /* MAIN SECTION */
 
