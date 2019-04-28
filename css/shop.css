@@ -1,0 +1,25 @@
+.main {
+    /* background: url('../img/food.jpg') center; */
+    /* background-size: cover; */
+    max-height: 33.33% !important;
+    min-height: 33.33% !important;
+}
+
+
+/* MAIN SECTION */
+
+.holder {
+    min-height: 33.33%;
+    max-width: 50%;
+}
+
+#homeheader {
+    position: absolute;
+    top: 40%;
+    color: white;
+    padding-left: 15px;
+}
+
+.homesvg {
+    transform: translate(0%, 5%);
+}
