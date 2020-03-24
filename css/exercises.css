@@ -1,0 +1,133 @@
+.main {
+    background: url('../img/gruop.jpg') center;
+    background-size: cover;
+    max-height: 60% !important;
+    min-height: 60% !important;
+}
+
+
+/* MAIN SECTION */
+
+.holder {
+    min-height: 60%;
+    max-width: 50%;
+}
+
+#homeheader {
+    position: absolute;
+    top: 40%;
+    color: white;
+    padding-left: 15px;
+}
+
+.homesvg {
+    transform: translate(0%, 5%);
+}
+
+.comparison {
+    background: black;
+}
+
+.comparison hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+.table {
+    margin: auto;
+    width: 80%;
+}
+
+th {
+    width: 5%;
+    text-align: center;
+}
+
+th:nth-child(1) {
+    width: 60%
+}
+
+td {
+    text-align: center;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+.check {
+    width: 20px;
+    height: 10px;
+    border-left: 1px solid #f6a13c70;
+    border-bottom: 1px solid #f6a13c70;
+    transform: rotate(-45deg);
+    margin: auto;
+}
+
+.table td,
+.table th {
+    border-top: unset;
+}
+
+.table thead th {
+    border-bottom: 1px solid #191a1b;
+    color: #ffa10c;
+    font-weight: bolder;
+}
+
+.table td {
+    color: #faebd7e3
+}
+
+.grid_body {
+    padding: 100px;
+    /* background: rgba(255, 255, 255, 0.69); */
+    /* margin: 5px; */
+}
+
+.grid_inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 70%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.69);
+    /* outline: 1px dashed #5d4f4f; */
+    outline-offset: -10px;
+}
+
+.grid_inner>p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+.grid_img {
+    position: absolute;
+    height: 120%;
+    width: 98%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid_body:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    /* box-shadow: 4px 4px 10px red; */
+    /* background: gold; */
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.grid_body:hover .grid_inner {
+    height: 120%;
+    width: 98%;
+}
+
+.grid_body>a {
+    color: #212529;
+}
